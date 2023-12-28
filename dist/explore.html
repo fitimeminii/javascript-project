@@ -244,7 +244,7 @@
         if(mycoins === null){
             localStorage.setItem('mycoins', JSON.stringify([originalData]))
         } else {
-            localStorage.setItem('mycoins', JSON.stringify(...mycoins, originalData))
+            localStorage.setItem('mycoins', JSON.stringify([...mycoins, originalData]))
         }
     })
 
