@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMac | Home</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- GO TO TOP BUTTON -->
+    <div class="topbutton fixed bottom-8 right-8 bg-white p-2 rounded-full text-blue-600 border border-blue-600 text-xl animate-wiggle animate-infinite hidden items-center transition-all duration-500 ease-in-out cursor-pointer shadow-md hover:bg-blue-100">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="lg:hidden fixed w-0 h-full bg-slate-500/90 text-white flex flex-col justify-center items-center text-[40px] tracking-[1px] overflow-hidden origin-left duration-500 backdrop-filter backdrop-blur-sm" id="hammenu">
+        <div class="flex flex-col items-center w-full border-b-2 border-white md:border-none">
+            <ion-icon name="close-outline" id="closeButton" class="absolute text-white text-2xl top-7 right-6 cursor-pointer"></ion-icon>
+            <ul>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="home.html">Home</a></li>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="explore.html">Explore</a></li>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="wallet.html">Wallet</a></li>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all whitespace-nowrap"><a href="aboutus.html">About us</a></li>
+            </ul>
+        </div>
+        <ul class="mt-5 md:hidden">
+            <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="#">Sign in</a></li>
+            <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="#">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header bg-white sticky top-0">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex md:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                <span class="title | text-blue-600 text-xl font-bold">CryptoMac</span>
+                </a>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12 lg:flex-1 justify-center">
+                <a href="home.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all">Home</a>
+                <a href="explore.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all">Explore</a>
+                <a href="wallet.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all">Wallet</a>
+                <a href="aboutus.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all whitespace-nowrap">About us</a>
+            </div>
+            <div class="hidden md:flex md:gap-x-1.5 md:flex-1 justify-center lg:justify-end">
+                <button type="button" class="text text-blue-600 hover:text-blue-500 border border-blue-600 hover:border-blue-500 font-medium rounded-lg text-sm px-5 py-2 text-center transition-all">Sign in</button>
+                <button type="button" class="text text-white bg-blue-600 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2 text-center transition-all">Register</button>
+            </div>
+            <div class="lg:hidden cursor-pointer flex items-center">
+                <ion-icon name="menu-outline" id="openButton" class="text-2xl"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section>
+        <div class="hero container pt-20 pb-10 flex flex-col-reverse lg:flex-row lg:px-12 items-center lg:gap-x-28 mx-auto">
+            <div class="flex-col lg:mb-0 text-center lg:text-start">
+                <h1 class="text font-bold mb-3 px-2 sm:px-0 text-gray-900 text-4xl md:text-5xl lg:tracking-wider">Your Gateway to Digital Wealth</h1>
+                <p class="text mb-9 lg:text-lg text-gray-900 text-md md:text-xl px-10 lg:px-0">Embark on a thrilling journey to financial prosperity, where every click is a step towards a wealthier digital tomorrow. </p>
+                <a href="explore.html" class="text py-2.5 px-5 pr-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center transition-all lg:text-start">Get started <ion-icon name="chevron-forward-outline" class="ml-1.5 animate-wiggle-more animate-infinite"></ion-icon></a>
+            </div>
+            <div class="px-10 lg:p-0 mb-14 lg:mb-0">
+                 <img src="/assets/imgs/hero-1.jpg" alt="Crypto Hero Image" id="heroImg">
+            </div>
+        </div>
+    </section>
+        
+    <!-- SERVICES SECTION -->
+    <section class="relative bg-gradient-to-r from-cyan-500 to-blue-500">
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,100 C 85.2153110047847,117.6842105263158 170.4306220095694,135.3684210526316 271,132 C 371.5693779904306,128.6315789473684 487.4928229665072,104.21052631578947 593,88 C 698.5071770334928,71.78947368421053 793.5980861244018,63.78947368421051 877,59 C 960.4019138755982,54.21052631578949 1032.1148325358852,52.631578947368425 1124,60 C 1215.8851674641148,67.36842105263158 1327.9425837320573,83.68421052631578 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><path d="M 0,400 L 0,233 C 80.00956937799043,254.45454545454547 160.01913875598086,275.90909090909093 248,279 C 335.98086124401914,282.09090909090907 431.93301435406704,266.8181818181818 536,258 C 640.066985645933,249.1818181818182 752.2488038277511,246.81818181818178 864,237 C 975.7511961722489,227.18181818181822 1087.0717703349283,209.90909090909093 1183,208 C 1278.9282296650717,206.09090909090907 1359.4641148325359,219.54545454545453 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path></svg>
+        <div class="container mx-auto pb-20 pt-10">
+            <div class="flex-col text-center">
+                <h2 class="title text-white text-5xl font-extrabold mb-5">Services</h2>
+                <h3 class="text text-white text-xl">Your success, our focus — discover specialized crypto offerings.</h3>
+            </div>
+        </div>
+        <div class="container flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row mx-auto gap-8 px-5 pb-10">
+            <div class="flex flex-col bg-white shadow-sm rounded-xl hover:shadow-xl transition w-full" href="#">
+                <img class="object-scale-down h-40 rounded-t-xl" src="/assets/imgs/walleticon.png" alt="Currency Wallet Image">
+                <div class="p-6 md:p-5">
+                  <h3 class="text-xl font-bold text-gray-900 title">Currency Wallet</h3>
+                  <p class="mt-1 text-gray-700 text">Elevate your finances with our dynamic Currency Wallet — your passport to a borderless world of possibilities.</p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white shadow-sm rounded-xl hover:shadow-xl transition w-full" href="#">
+                <img class="object-scale-down h-40 rounded-t-xl" src="/assets/imgs/transactionicon.png" alt="Currency Transaction Image">
+                <div class="p-6 md:p-5">
+                  <h3 class="text-xl font-bold text-gray-900 title">Currency Transaction</h3>
+                  <p class="mt-1 text-gray-700 text">Explore global transactions! Send and receive money with speed and security for an exhilarating experience.</p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white shadow-sm rounded-xl hover:shadow-xl transition w-full" href="#">
+                <img class="object-scale-down h-40 rounded-t-xl" src="/assets/imgs/investmenticon.png" alt="Bitcoin Investment Image">
+                <div class="p-6 md:p-5">
+                  <h3 class="text-xl font-bold text-gray-900 title">Bitcoin Investment</h3>
+                  <p class="mt-1 text-gray-700 text">Dive into Bitcoin for a thrilling wealth journey! Explore global transactions with speed and security.</p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white shadow-sm rounded-xl hover:shadow-xl transition w-full" href="#">
+                <img class="object-scale-down h-40 rounded-t-xl" src="/assets/imgs/exchangeicon.png" alt="Currency Exchange Image">
+                <div class="p-6 md:p-5">
+                  <h3 class="text-xl font-bold text-gray-900 title">Currency Exchange</h3>
+                  <p class="mt-1 text-gray-700 text">Ignite global finance! Seamless, exciting transactions transcending borders. Trade currencies with a spark!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section>
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="100%" y1="50%" x2="0%" y2="50%"><stop offset="5%" stop-color="#06b6d4"></stop><stop offset="95%" stop-color="#3b82f6"></stop></linearGradient></defs><path d="M 0,400 L 0,100 C 63.56666666666666,89.07435897435897 127.13333333333333,78.14871794871794 198,78 C 268.8666666666667,77.85128205128206 347.0333333333334,88.47948717948718 444,85 C 540.9666666666666,81.52051282051282 656.7333333333332,63.93333333333334 750,63 C 843.2666666666668,62.06666666666666 914.0333333333335,77.78717948717949 987,78 C 1059.9666666666665,78.21282051282051 1135.1333333333334,62.91794871794872 1211,64 C 1286.8666666666666,65.08205128205128 1363.4333333333334,82.54102564102564 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><defs><linearGradient id="gradient" x1="100%" y1="50%" x2="0%" y2="50%"><stop offset="5%" stop-color="#06b6d4"></stop><stop offset="95%" stop-color="#3b82f6"></stop></linearGradient></defs><path d="M 0,400 L 0,233 C 86.83846153846156,240.52820512820514 173.67692307692312,248.0564102564103 262,240 C 350.3230769230769,231.9435897435897 440.13076923076915,208.30256410256408 510,201 C 579.8692307692309,193.69743589743592 629.8000000000001,202.73333333333335 708,224 C 786.1999999999999,245.26666666666665 892.6692307692308,278.7641025641026 981,278 C 1069.3307692307692,277.2358974358974 1139.523076923077,242.21025641025642 1213,229 C 1286.476923076923,215.78974358974358 1363.2384615384615,224.3948717948718 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path></svg>
+        <div class="container flex flex-col lg:flex-row mx-auto pt-20 lg:gap-x-20 lg:px-12">
+            <div class="px-10 lg:p-0 mb-14 lg:mb-0 flex items-center">
+                <img src="/assets/imgs/whyus.png" alt="Why Us Image" id="whyUsImg">
+           </div>
+           <div class="p-6 lg:p-0 w-full">
+            <h2 class="title font-extrabold text-5xl mb-3 text-gray-900">Why Us</h2>
+            <h3 class="text text-xl mb-3 text-blue-600">Discover the Difference: Your Smart Choice for Financial Excellence.</h3>
+            <p class="text mb-3">Embark on an exciting cryptocurrency journey with CryptoMac, where simplicity meets security and affordability. Wondering why we're the go-to platform? Discover the pillars that make your experience exceptional.</p>
+            <ul class="text">
+                <li class="mb-3"><ion-icon name="checkmark-done-outline" class="text-gray-900 text-2xl float-left mr-1"></ion-icon><span class="font-bold text-blue-600">Easy To Start:</span> Begin your cryptocurrency journey seamlessly with CryptoMac's user-friendly platform, ensuring a straightforward and hassle-free entry.</li>
+                <li class="mb-3"><ion-icon name="checkmark-done-outline" class="text-gray-900 text-2xl float-left mr-1"></ion-icon><span class="font-bold text-blue-600">Safe & Secure:</span> Trust in CryptoMac's robust security measures, providing a shield for your digital assets and personal information, ensuring a secure environment.</li>
+                <li class="mb-3"><ion-icon name="checkmark-done-outline" class="text-gray-900 text-2xl float-left mr-1"></ion-icon><span class="font-bold text-blue-600">Affordable Plans:</span> Explore the world of cryptocurrency without straining your budget, as CryptoMac offers affordable plans to make digital finance accessible to everyone.</li>
+                <li class="mb-3"><ion-icon name="checkmark-done-outline" class="text-gray-900 text-2xl float-left mr-1"></ion-icon><span class="font-bold text-blue-600">Secure Storage:</span> Rely on CryptoMac for secure storage solutions, prioritizing the protection and integrity of your cryptocurrency holdings.</li>
+                <li class="mb-3"><ion-icon name="checkmark-done-outline" class="text-gray-900 text-2xl float-left mr-1"></ion-icon><span class="font-bold text-blue-600">Protected By Insurance:</span> Rest easy with the added layer of security provided by CryptoMac's comprehensive insurance coverage, enhancing your peace of mind.</li>
+                <li class="mb-3"><ion-icon name="checkmark-done-outline" class="text-gray-900 text-2xl float-left mr-1"></ion-icon><span class="font-bold text-blue-600">24/7 Support:</span> Experience continuous reliability with CryptoMac's round-the-clock assistance, ensuring dedicated support whenever you need it.</li>
+            </ul>
+           </div>
+        </div>
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,100 C 84.97179487179486,94.32051282051282 169.9435897435897,88.64102564102564 251,91 C 332.0564102564103,93.35897435897436 409.197435897436,103.75641025641025 495,94 C 580.802564102564,84.24358974358975 675.2666666666667,54.33333333333334 759,64 C 842.7333333333333,73.66666666666666 915.7358974358974,122.91025641025642 990,120 C 1064.2641025641026,117.08974358974358 1139.7897435897435,62.02564102564102 1215,50 C 1290.2102564102565,37.97435897435898 1365.1051282051283,68.98717948717949 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#2563eb" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 L 0,233 C 88.05128205128204,218.31794871794872 176.1025641025641,203.63589743589745 252,210 C 327.8974358974359,216.36410256410255 391.64102564102564,243.774358974359 469,247 C 546.3589743589744,250.225641025641 637.3333333333334,229.26666666666668 716,232 C 794.6666666666666,234.73333333333332 861.0256410256411,261.1589743589743 952,264 C 1042.974358974359,266.8410256410257 1158.5641025641025,246.09743589743593 1244,237 C 1329.4358974358975,227.90256410256407 1384.7179487179487,230.45128205128202 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#2563eb" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+    </section>
+
+    <!-- TAKE ACTION -->
+    <section class="bg-blue-600">
+        <div class="not-convinced container flex flex-col items-center mx-auto text-white py-8 text-center">
+            <h2 class="title px-9 text-5xl lg:text-6xl font-extrabold mb-14 lg:mb-10">What are you waiting for?</h2>
+            <a href="explore.html" class="text animate-pulse animate-infinite hover:animate-none inline-flex items-center bg-white text-blue-600 hover:text-blue-500 pl-8 pr-6 py-3 rounded-lg text-xl transition-all shadow-md hover:shadow-xl">Take action <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+              </svg>
+              </a>
+        </div>
+    </section>
+
+    <!-- OUR VISION SECTION -->
+    <section>
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,100 C 93.35128205128208,80.82820512820513 186.70256410256417,61.656410256410254 271,77 C 355.29743589743583,92.34358974358975 430.5410256410256,142.2025641025641 509,138 C 587.4589743589744,133.7974358974359 669.1333333333332,75.53333333333333 745,76 C 820.8666666666668,76.46666666666667 890.925641025641,135.66410256410256 976,138 C 1061.074358974359,140.33589743589744 1161.1641025641027,85.81025641025641 1241,70 C 1320.8358974358973,54.18974358974359 1380.4179487179485,77.09487179487179 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#2563eb" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><path d="M 0,400 L 0,233 C 58.16410256410259,232.17179487179487 116.32820512820518,231.34358974358975 211,225 C 305.6717948717948,218.65641025641025 436.85128205128194,206.79743589743586 521,217 C 605.1487179487181,227.20256410256414 642.2666666666668,259.4666666666667 720,276 C 797.7333333333332,292.5333333333333 916.0820512820512,293.33589743589744 993,274 C 1069.9179487179488,254.66410256410256 1105.4051282051282,215.1897435897436 1173,205 C 1240.5948717948718,194.8102564102564 1340.297435897436,213.9051282051282 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#2563eb" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path></svg>
+        <div class="container flex flex-col items-center pt-16 mx-auto">
+            <div class="flex flex-col items-center mb-8">
+                <h3 class="title text-blue-600 font-bold text-xl tracking-wide mb-3">OUR VISION</h3>
+                <h2 class="text text-gray-900 font-extrabold text-4xl lg:w-96 text-center tracking-wide">Cryptocurrency in Every Wallet&#8482;</h2>
+            </div>
+            <div class="mb-8">
+                <img src="/assets/imgs/crypto-com-logo.webp" alt="Crypto.com Logo" class="lg:w-96">
+            </div>
+            <div class="flex justify-between mb-10 lg:mb-14">
+                <div class="flex flex-col items-center mr-10 sm:mr-32 md:mr-44 lg:mr-52">
+                    <span class="text text-2xl font-bold text-gray-900">Founded in</span>
+                    <h2 class="title text-5xl font-extrabold text-blue-600">2016</h2>
+                </div>
+                <div class="flex flex-col items-center ml-10 sm:ml-32 md:ml-44 lg:ml-52">
+                    <span class="text text-2xl font-bold text-gray-900">Users</span>
+                    <h2 class="title text-5xl font-extrabold text-blue-600">80M</h2>
+                </div>
+            </div>
+            <div>
+                <a href="aboutus.html" class="text group relative overflow-hidden rounded bg-gray-200 pl-8 pr-6 py-3 text-sm font-medium text-gray-900 hover:text-blue-600 focus:outline-none active:bg-blue-600 active:text-white transition-all inline-flex items-center shadow-md hover:shadow-xl">
+	                <span class="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                    <span class="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-blue-600 transition-all duration-200 group-hover:h-full"></span>
+                    <span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                    <span class="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-blue-600 transition-all duration-200 group-hover:h-full"></span>About Us<ion-icon name="chevron-forward-outline" class="ml-1.5 animate-wiggle-more animate-infinite"></ion-icon></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-gradient-to-r from-cyan-500 to-blue-500">
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,100 C 82.83846153846156,114.94615384615385 165.67692307692312,129.8923076923077 239,139 C 312.3230769230769,148.1076923076923 376.13076923076915,151.37692307692305 462,131 C 547.8692307692309,110.62307692307694 655.8000000000002,66.60000000000001 739,66 C 822.1999999999998,65.39999999999999 880.6692307692307,108.22307692307692 947,116 C 1013.3307692307693,123.77692307692308 1087.523076923077,96.50769230769231 1171,88 C 1254.476923076923,79.49230769230769 1347.2384615384615,89.74615384615385 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><path d="M 0,400 L 0,233 C 87.17692307692306,256.85128205128206 174.35384615384612,280.7025641025641 248,272 C 321.6461538461539,263.2974358974359 381.7615384615385,222.04102564102564 455,209 C 528.2384615384615,195.95897435897436 614.5999999999999,211.13333333333335 712,213 C 809.4000000000001,214.86666666666665 917.8384615384616,203.42564102564106 1004,213 C 1090.1615384615384,222.57435897435894 1154.0461538461536,253.16410256410256 1223,260 C 1291.9538461538464,266.83589743589744 1365.9769230769232,249.91794871794872 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path></svg>
+        <div class="container flex flex-col items-center mx-auto pt-20 pb-10 px-10">
+            <h2 class="title items-center text-center lg:text-start text-white font-bold text-4xl mb-14">Frequently Asked Questions</h2>
+            <div class="w-5/6">
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input1" class="absolute peer opacity-0">
+                    <label for="input1" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer">What is crypto?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">Cryptocurrency is a digital or virtual currency that operates on distributed ledger technology called a blockchain and uses cryptography for security. It is decentralized and operates independently of a central bank. Unlike traditional currencies, cryptocurrencies are not backed by a physical commodity or government, and their value is determined by market demand and supply. Cryptocurrencies can be used to buy goods and services, transfer funds, and trade in markets. Popular cryptocurrencies include Bitcoin, Ethereum, Litecoin, Ripple, and Cronos. Many cryptocurrencies, like Bitcoin, are created through a process called mining, which involves solving complex mathematical equations to validate and record transactions on a blockchain. This mechanism is also called Proof of Work (PoW). Another consensus mechanism that has increased in popularity — as it is more energy efficient — is Proof of Stake (PoS). Instead of mining, PoS relies on network participants validating transactions. Ethereum, the second-largest cryptocurrency, uses this consensus mechanism.</p>
+                    </div>
+                </div>
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input2" class="absolute peer opacity-0">
+                    <label for="input2" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer">What is Bitcoin?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">Bitcoin is a cryptocurrency that operates on a peer-to-peer (P2P) network. It was created in 2009 by an unknown person or group using the pseudonym Satoshi Nakamoto. Bitcoin is the first and most well-known cryptocurrency, and it has gained significant popularity and value since its creation. Unlike traditional fiat currency, which is controlled by central banks and governments, Bitcoin operates independently of any central authority. Transactions are verified and recorded on the blockchain, which is a distributed ledger that maintains a permanent and transparent record of all transactions. Bitcoin can be bought, sold, and exchanged on various cryptocurrency exchanges, and it can be used to purchase goods and services from merchants that accept Bitcoin as a form of payment. The supply of bitcoins is limited to 21 million units, and new bitcoins are created through mining, which involves using specialized computer hardware to solve complex mathematical equations. Bitcoin is known for its high volatility, and its value can fluctuate rapidly in response to market conditions, news events, and other factors. Many traders, including institutional investors, see Bitcoin as a store of value and a way to participate in the growing cryptocurrency ecosystem.</p>
+                    </div>
+                </div>
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input3" class="absolute peer opacity-0">
+                    <label for="input3" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer">Where to buy crypto?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">There are several ways to buy cryptocurrencies, including:</p>
+                            <ul class="accord-text list-decimal pl-10">
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Brokerage services:</span> Crypto brokers allow users to simply buy and sell cryptocurrencies. A popular example is the CryptoMac App, trusted by over 80 million users. It is available at the Apple Store and on Google Play.</li>
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Cryptocurrency exchanges:</span> These are online platforms where users can buy, sell, and trade cryptocurrencies using fiat currency or other cryptocurrencies. They offer more complex functions compared to a crypto brokerage, adding trading instruments like crypto derivatives. The CryptoMac Exchange is an example of a popular crypto exchange.</li>
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Peer-to-peer (P2P) marketplaces:</span> These are platforms where buyers and sellers can directly trade cryptocurrencies without the involvement of a third-party exchange. This is also known as DeFi, short for decentralized finance. Multiple P2P crypto marketplaces can be accessed all in one app via the CryptoMac DeFi Wallet.</li>
+                            </ul>
+                            <p class="accord-text text-gray-200 text-lg pb-3">It is important to perform proper research and choose a reputable platform to buy cryptocurrencies. For instance, CryptoMac holds the highest security rating in the industry. In addition, it is advisable to store cryptocurrencies securely in a wallet like the CryptoMac App or CryptoMac DeFi Wallet.</p>
+                    </div>
+                </div>
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input4" class="absolute peer opacity-0">
+                    <label for="input4" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer">How to buy crypto?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">To buy crypto, follow these general steps:<p>
+                            <ul class="accord-text list-decimal pl-10">
+                                <li class="mb-3 text-gray-200">Choose a crypto platform to use, like the CryptoMac Exchange or CryptoMac App.</li>
+                                <li class="mb-3 text-gray-200">Create an account on the chosen platform by providing personal information and ID verification, also known as ‘Know Your Customer’ (KYC) procedures.</li>
+                                <li class="mb-3 text-gray-200">Deposit fiat currency or another cryptocurrency into the newly created account. The CryptoMac App supports bank transfers, credit cards, debit cards, and cryptocurrency transfers to buy crypto, depending on region.</li>
+                                <li class="mb-3 text-gray-200">Navigate to the ‘Buy’ section of the CryptoMac Exchange or App and select the crypto to buy.</li>
+                                <li class="mb-3 text-gray-200">Enter the amount of cryptocurrency to buy and confirm the transaction.</li>
+                                <li class="mb-3 text-gray-200">The crypto will be deposited into the account. From here, it can be transferred to other crypto wallets or converted back to fiat currency and paid out to a bank account.</li>
+                            </ul>
+                            <p class="accord-text text-gray-200 text-lg pb-3">It is important to perform proper research and choose a reputable platform to buy cryptocurrencies. For instance, CryptoMac holds the highest security rating in the industry. In addition, it is advisable to store cryptocurrencies securely in a wallet like the CryptoMac App or CryptoMac DeFi Wallet.</p>
+                    </div>
+                </div>
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input5" class="absolute peer opacity-0">
+                    <label for="input5" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer">How to buy Bitcoin?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">Users can buy Bitcoin from a cryptocurrency exchange, a crypto brokerage service like the CryptoMac App, or a peer-to-peer (P2P) marketplace like those found in the CryptoMac DeFi Wallet. Here are some general steps to buying bitcoin from an exchange or brokerage service:<p>
+                            <ul class="accord-text list-decimal pl-10">
+                                <li class="mb-3 text-gray-200">Choose a reputable cryptocurrency platform that supports Bitcoin trading. Popular options include the CryptoMac App and the CryptoMac Exchange.</li>
+                                <li class="mb-3 text-gray-200">Create an account on the chosen platform and complete the KYC verification process, which may require providing personal identification documents.</li>
+                                <li class="mb-3 text-gray-200">Fund an account using a bank transfer, credit/debit card, or other cryptocurrency, depending on region.</li>
+                                <li class="mb-3 text-gray-200">Navigate to the ‘Buy’ section of the platform and select Bitcoin as the cryptocurrency to buy.</li>
+                                <li class="mb-3 text-gray-200">Enter the amount of bitcoin to buy, or the amount of fiat or cryptocurrency to spend.</li>
+                                <li class="mb-3 text-gray-200">Review the transaction details and confirm the purchase.</li>
+                                <li class="mb-3 text-gray-200">Once the transaction is complete, the bitcoin will be deposited into the chosen account. From here, the funds can be transferred to other crypto wallets or converted back to fiat currency and paid out to a bank account.</li>
+                            </ul>
+                            <p class="accord-text text-gray-200 text-lg pb-3">It is important to perform proper research and choose a reputable platform to buy cryptocurrencies. For instance, CryptoMac holds the highest security rating in the industry. In addition, it is advisable to store cryptocurrencies securely in a wallet like the CryptoMac App or CryptoMac DeFi Wallet.</p>
+                    </div>
+                </div>
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input6" class="absolute peer opacity-0">
+                    <label for="input6" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer">How to trade crypto?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">To trade cryptocurrency, follow these general steps:<p>
+                            <ul class="accord-text list-decimal pl-10">
+                                <li class="mb-3 text-gray-200">Choose a cryptocurrency exchange that supports trading. A popular option is the CryptoMac Exchange.</li>
+                                <li class="mb-3 text-gray-200">Create an account on the chosen platform and perform ID verification, known as KYC (‘Know Your Customer’).</li>
+                                <li class="mb-3 text-gray-200">Deposit funds into the newly created account using a supported payment method. The CryptoMac Exchange supports bank transfers and credit/debit cards.</li>
+                                <li class="mb-3 text-gray-200">Navigate to the trading section of the platform and select the cryptocurrency pair to trade.</li>
+                                <li class="mb-3 text-gray-200">Choose whether to buy or sell the cryptocurrency, and enter the amount to trade.</li>
+                                <li class="mb-3 text-gray-200">Set the preferred price and order type. There are several types of orders, including market orders, limit orders, stop orders, and crypto options, which allow users to buy or sell at a specific price or under certain conditions.</li>
+                                <li class="mb-3 text-gray-200">Submit the trade order and wait for it to be executed. Depending on market conditions, the trade may be filled immediately, or it may take time to be filled.</li>
+                                <li class="mb-3 text-gray-200">Monitor trades and adjust strategies as necessary.</li>
+                            </ul>
+                            <p class="accord-text text-gray-200 text-lg pb-3">It is crucial to note that trading cryptocurrency carries risk, and it is important to trade only what you can afford to lose.</p>
+                    </div>
+                </div>
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input7" class="absolute peer opacity-0">
+                    <label for="input7" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer">How to earn crypto?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">There are several ways to earn cryptocurrency, including:</p>
+                            <ul class="accord-text list-decimal pl-10">
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Mining:</span> Cryptocurrency mining involves using specialized computer hardware to solve complex mathematical equations that validate transactions on a blockchain network. Successful miners are rewarded with newly minted cryptocurrency for their efforts.</li>
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Staking/Lockups:</span> Staking and lockups involve holding or locking up a certain amount of cryptocurrency in a wallet or on a platform to support the operations of the blockchain network. Stakers are rewarded with new cryptocurrency as a form of interest for their support.</li>
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Trading:</span> Trading cryptocurrency involves buying and selling cryptocurrencies on exchanges or other trading platforms. Those who have a good understanding of market trends and are able to make informed trading decisions can earn profits through trading.</li>
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Airdrops:</span> Airdrops are free distributions of cryptocurrency to users who meet certain criteria or participate in promotional activities.</li>
+                                <li class="mb-3 text-gray-200"><span class="font-bold accord-title text-white">Crypto Projects:</span> Some blockchain projects offer rewards or bounties for users who contribute to their development or community. This can include activities like bug bounties, testing, or content creation.</li>
+                            </ul>
+                            <p class="accord-text text-gray-200 text-lg pb-3">It's important to note that each method of earning cryptocurrency carries its own risks and rewards. It is recommended to carefully research cryptocurrencies and understand the process before buying.</p>
+                    </div>
+                </div>
+                <div class="relative mb-8">
+                    <input type="checkbox" id="input8" class="absolute peer opacity-0">
+                    <label for="input8" class="title text-xl sm:text-2xl font-bold text-white inline-flex items-center w-full cursor-pointer pr-8 lg:pr-0">How to earn rewards on crypto?</label>
+                    <div class="absolute top-1 right-[5px] rotate-0 peer-checked:rotate-180 transition-all duration-300">
+                        <ion-icon name="chevron-down-outline" class="text-white text-2xl flex items-center"></ion-icon>
+                    </div>
+                    <div class="mt-2 max-h-0 overflow-hidden peer-checked:max-h-full transition-max-h border-b-2 border-white border:overflow-visible">
+                        <p class="text text-gray-200 text-lg pb-3">Users can earn rewards on their cryptocurrency holdings through various products that offer rewards-bearing accounts or lending services. Here are some ways to earn rewards on cryptocurrency:<p>
+                            <ul class="accord-text list-decimal pl-10">
+                                <li class="mb-3 text-gray-200">The CryptoMac App, Exchange, and DeFi Wallet all offer different ways to earn rewards on crypto, called Crypto Earn.</li>
+                                <li class="mb-3 text-gray-200">Create an account on the chosen platform and deposit cryptocurrency holdings into the rewards account.</li>
+                                <li class="mb-3 text-gray-200">Depending on the platform, users may earn rewards through lending their cryptocurrency to other users or by locking up their cryptocurrency for a period of time.</li>
+                                <li class="mb-3 text-gray-200">Some products offer fixed reward rates (e.g., the CryptoMac Visa Card), while others may offer variable rates that depend on market conditions (e.g., the 'Earn' feature in the CryptoMac DeFi Wallet).</li>
+                                <li class="mb-3 text-gray-200">Monitor rewards and adjust strategies as necessary.</li>
+                            </ul>
+                            <p class="accord-text text-gray-200 text-lg pb-3">It's important to note that earning interest and rewards on cryptocurrency carries risks, including fluctuations in market conditions that may affect interest rates. Make sure to carefully research and understand terms and conditions before depositing cryptocurrency.</p>
+                    </div>
+                </div>
+                <div class="text-center lg:text-start">
+                    <h3 class="text text-white text-lg font-medium">Have more questions? <a href="#" class="text text-gray-200 underline underline-offset-4">Contact us.</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="100%" y1="50%" x2="0%" y2="50%"><stop offset="5%" stop-color="#06b6d4"></stop><stop offset="95%" stop-color="#3b82f6"></stop></linearGradient></defs><path d="M 0,400 L 0,100 C 84.70834764685677,104.69254551700446 169.41669529371353,109.38509103400892 231,120 C 292.58330470628647,130.61490896599108 331.0415664720027,147.15218138096873 392,135 C 452.9584335279973,122.84781861903127 536.4170388182755,82.00618344211611 608,61 C 679.5829611817245,39.99381655788388 739.2902782548953,38.8230848505668 811,61 C 882.7097217451047,83.1769151494332 966.4218481621435,128.70147715561663 1037,130 C 1107.5781518378565,131.29852284438337 1165.0223290965305,88.37100652696668 1230,76 C 1294.9776709034695,63.628993473033326 1367.4888354517348,81.81449673651666 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><defs><linearGradient id="gradient" x1="100%" y1="50%" x2="0%" y2="50%"><stop offset="5%" stop-color="#06b6d4"></stop><stop offset="95%" stop-color="#3b82f6"></stop></linearGradient></defs><path d="M 0,400 L 0,233 C 56.15046375815871,242.29852284438337 112.30092751631742,251.59704568876674 176,245 C 239.69907248368258,238.40295431123326 310.94675369288905,215.9103400893164 387,219 C 463.05324630711095,222.0896599106836 543.9120577121264,250.76159395396772 627,241 C 710.0879422878736,231.23840604603228 795.4050154586054,183.04328409481275 856,189 C 916.5949845413946,194.95671590518725 952.4678804534526,255.06526966678115 1015,269 C 1077.5321195465474,282.93473033321885 1166.723462727585,250.69563723806255 1242,237 C 1317.276537272415,223.30436276193745 1378.6382686362076,228.15218138096873 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path></svg>
+        <div class="container flex flex-col items-center pt-10 mx-auto">
+            <h2 class="title text-blue-600 text-3xl font-extrabold mb-5 w-full text-center pb-5 border-b border-gray-300">CryptoMac</h2>
+            <div class="flex flex-col sm:flex-row wrap md:flex-row p-10 sm:grid sm:grid-cols-2 sm:gap-x-40 sm:gap-y-10 lg:flex lg:flex-row lg:gap-x-32 gap-y-8 border-b border-gray-300">
+                <div class="flex flex-col">
+                    <h4 class="title text-gray-900 text-xl font-bold mb-2">Get In Touch</h4>
+                    <p class="text inline-flex items-center mb-2"><ion-icon name="location-outline" class="text-blue-600 text-2xl mx-2"></ion-icon>123 Street, New York, USA</p>
+                    <p class="text inline-flex items-center mb-2"><ion-icon name="call-outline" class="text-blue-600 text-2xl mx-2"></ion-icon>+012 345 67890</p>
+                    <p class="text inline-flex items-center mb-2"><ion-icon name="mail-outline" class="text-blue-600 text-2xl mx-2"></ion-icon>info@cryptomac.com</p>
+                </div>
+                <div class="flex flex-col whitespace-nowrap">
+                    <h4 class="title text-gray-900 text-xl font-bold mb-2">Our Company</h4>
+                    <a href="aboutus.html" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>About Us</a>
+                    <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Contact Us</a>
+                    <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Terms & Conditions</a>
+                </div>
+                <div class="flex flex-col whitespace-nowrap">
+                    <h4 class="title text-gray-900 text-xl font-bold mb-2">Our Services</h4>
+                    <a href="wallet.html" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Currency Wallet</a>
+                    <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Currency Transaction</a>
+                    <a href="explore.html" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Bitcoin Investment</a>
+                    <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Currency Exchange</a>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="title text-gray-900 text-xl font-bold mb-2">Follow Us</h4>
+                    <div class="flex flex-row">
+                        <a href="#"><ion-icon name="logo-twitter" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-youtube" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2">
+                <h4 class="text text-gray-600">&copy; <a href="#" class="text text-blue-600">CryptoMac</a>, All Rights Reserved.</h4>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module">
+        import {headerShadow, toggleButtons} from '../components/functions.js'
+        headerShadow()
+        openButton.addEventListener('click', toggleButtons)
+        closeButton.addEventListener('click', toggleButtons)
+
+        const topButton = document.querySelector('.topbutton')
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 300){
+                topButton.classList.remove('hidden')
+                topButton.classList.add('inline-flex')
+            } else {
+                topButton.classList.add('hidden')
+                topButton.classList.remove('inline-flex')
+            }
+        })
+
+        topButton.addEventListener('click', () =>{
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        })
+    </script>
+</body>
+</html>

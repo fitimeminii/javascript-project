@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #6c97f4;
+    border: 2px solid white;
+    border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #4179f1;
+}
+
+.topbutton {
+    z-index: 1000;
+}
+
+#hammenu {
+    z-index: 1001;
+}
+
+header {
+    z-index: 1000;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-title{
+    font-weight: 900;
+}
+
+#mobile-search {
+    z-index: 2000;
+}

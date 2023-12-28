@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMac | Home</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="lg:hidden fixed w-0 h-full bg-slate-500/90 text-white flex flex-col justify-center items-center text-[40px] tracking-[1px] overflow-hidden origin-left duration-500 backdrop-filter backdrop-blur-sm" id="hammenu">
+    <div class="flex flex-col items-center w-full border-b-2 border-white md:border-none">
+        <ion-icon name="close-outline" id="closeButton" class="absolute text-white text-2xl top-7 right-6 cursor-pointer"></ion-icon>
+            <ul>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="home.html">Home</a></li>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="explore.html">Explore</a></li>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="wallet.html">Wallet</a></li>
+                <li class="mb-2 hover:translate-y-[-5px] transition-all whitespace-nowrap"><a href="aboutus.html">About us</a></li>
+            </ul>
+    </div>
+    <ul class="mt-5 md:hidden">
+        <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="#">Sign in</a></li>
+        <li class="mb-2 hover:translate-y-[-5px] transition-all"><a href="#">Register</a></li>
+    </ul>
+</div>
+
+<!-- HEADER -->
+<header class="header bg-white sticky top-0">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex md:flex-1">
+            <a href="#" class="-m-1.5 p-1.5"><span class="title | text-blue-600 text-xl font-bold">CryptoMac</span></a>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12 lg:flex-1 justify-center">
+            <a href="home.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all">Home</a>
+            <a href="explore.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all">Explore</a>
+            <a href="wallet.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all">Wallet</a>
+            <a href="aboutus.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 transition-all whitespace-nowrap">About us</a>
+        </div>
+        <div class="hidden md:flex md:gap-x-1.5 md:flex-1 justify-center lg:justify-end">
+            <button type="button" class="text text-blue-600 hover:text-blue-500 border border-blue-600 hover:border-blue-500 font-medium rounded-lg text-sm px-5 py-2 text-center transition-all">Sign in</button>
+            <button type="button" class="text text-white bg-blue-600 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2 text-center transition-all">Register</button>
+        </div>
+        <div class="lg:hidden cursor-pointer flex items-center">
+            <ion-icon name="menu-outline" id="openButton" class="text-2xl"></ion-icon>
+        </div>
+    </nav>
+</header>
+
+<!-- ABOUT US SECTION -->
+<section class="bg-blue-600">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path fill="#ffffff" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path></svg>
+    <div class="container flex flex-col-reverse lg:flex-row items-center mx-auto py-16 px-14 lg:gap-10">
+        <div class="flex flex-col w-full">
+            <h2 class="title font-extrabold text-5xl mb-3 text-white">About Us</h2>
+            <p class="text text-white text-lg mb-2 sm:text-justify">It started as a vision in 2016, a vision that has since evolved into the pioneering force known today as CryptoMac. With a commitment to revolutionizing the landscape of digital finance, CryptoMac embarked on a journey that transcended boundaries and redefined possibilities. From humble beginnings, the company developed a suite of cutting-edge services that have left an indelible mark on the cryptocurrency industry.
+
+            <p class="text text-white text-lg mb-2 sm:text-justify">From the inception of the dynamic Currency Wallet to facilitating global transactions, venturing into Bitcoin investments, and enabling seamless Currency Exchanges, CryptoMac has consistently pushed the boundaries of what's possible in the world of digital finance. The company's trajectory is marked by a commitment to user-friendly interfaces, robust security measures, and an unwavering dedication to affordability.</p>
+                
+            <p class="text text-white text-lg mb-2 sm:text-justify">Today, CryptoMac proudly serves 80 million users globally, a testament to the trust and reliability it has garnered. The journey continues, with a focus on crafting an unparalleled user experience. Secure storage solutions, comprehensive insurance coverage, and 24/7 support underscore CryptoMac's commitment to simplicity, security, and accessibility.</p>
+        </div>
+        <div class="w-full flex justify-center lg:justify-end mb-16 lg:mb-0">
+            <img src="/assets/imgs/aboutus.png" alt="About Us Image">
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path fill="#2563EB" fill-opacity="1" d="M1440,96L0,32L0,0L1440,0Z"></path></svg>
+    <div class="container flex flex-col items-center pt-10 mx-auto">
+        <h2 class="title text-blue-600 text-3xl font-extrabold mb-5 w-full text-center pb-5 border-b border-gray-300">CryptoMac</h2>
+        <div class="flex flex-col sm:flex-row wrap md:flex-row p-10 sm:grid sm:grid-cols-2 sm:gap-x-40 sm:gap-y-10 lg:flex lg:flex-row lg:gap-x-32 gap-y-8 border-b border-gray-300">
+            <div class="flex flex-col">
+                <h4 class="title text-gray-900 text-xl font-bold mb-2">Get In Touch</h4>
+                <p class="text inline-flex items-center mb-2"><ion-icon name="location-outline" class="text-blue-600 text-2xl mx-2"></ion-icon>123 Street, New York, USA</p>
+                <p class="text inline-flex items-center mb-2"><ion-icon name="call-outline" class="text-blue-600 text-2xl mx-2"></ion-icon>+012 345 67890</p>
+                <p class="text inline-flex items-center mb-2"><ion-icon name="mail-outline" class="text-blue-600 text-2xl mx-2"></ion-icon>info@cryptomac.com</p>
+            </div>
+            <div class="flex flex-col whitespace-nowrap">
+                <h4 class="title text-gray-900 text-xl font-bold mb-2">Our Company</h4>
+                <a href="aboutus.html" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>About Us</a>
+                <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Contact Us</a>
+                    <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Terms & Conditions</a>
+            </div>
+            <div class="flex flex-col whitespace-nowrap">
+                <h4 class="title text-gray-900 text-xl font-bold mb-2">Our Services</h4>
+                <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Currency Wallet</a>
+                <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Currency Transaction</a>
+                <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Bitcoin Investment</a>
+                <a href="#" class="text inline-flex items-center mb-2 hover:text-blue-900 transition-all"><ion-icon name="chevron-forward-outline" class="text-blue-600 text-xl mx-1"></ion-icon>Currency Exchange</a>
+            </div>
+            <div class="flex flex-col">
+                <h4 class="title text-gray-900 text-xl font-bold mb-2">Follow Us</h4>
+                <div class="flex flex-row">
+                    <a href="#"><ion-icon name="logo-twitter" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin" class="text-blue-600 text-xl mx-1 border border-blue-600 rounded-full p-2.5 hover:bg-blue-600 hover:text-white transition-all"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="py-2">
+            <h4 class="text text-gray-600">&copy; <a href="#" class="text text-blue-600">CryptoMac</a>, All Rights Reserved.</h4>
+        </div>
+    </div>
+</footer>
+
+<script src="/node_modules/axios/dist/axios.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module">
+    import {headerShadow, toggleButtons} from '../components/functions.js'
+    headerShadow()
+    openButton.addEventListener('click', toggleButtons)
+    closeButton.addEventListener('click', toggleButtons)
+</script>
+</body>
+</html>
