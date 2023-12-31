@@ -18,28 +18,28 @@ export function Cryptos(coins){
 }
 
 export function walletCoins(coins){
-    let cryptosHtml = ''
+    let cryptosWalletHtml = ''
     coins.forEach(coin => {
-        cryptosHtml += `
+        cryptosWalletHtml += `
             <tr class="bg-white border-b">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 flex items-center"><img src="${coin.image}" alt="${coin.id}" class="w-7 h-7 mr-2">${coin.name}</th>
                 <td class="px-6 py-4">$${coin.current_price.toLocaleString()}</td>
                 <td class="px-6 py-4 ${coin.price_change_percentage_24h >= 0 ? 'text-green-500' : 'text-red-600'}">${coin.price_change_percentage_24h.toFixed(2)}%</td>
                 <td class="px-6 py-4">$${coin.market_cap.toLocaleString()}</td>
                 <td class="px-6 py-4 w-auto text-center">
-                    <a id="${coin.id}" class="buybutton font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
+                    <a id="${coin.id}" class="sellbutton font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
                 </td>
             </tr>
         `
     })
 
-    return cryptosHtml
+    return cryptosWalletHtml
 }
 
 export function mobileWalletCoins(coins){
-    let mobileCryptosHtml = ''
+    let mobileWalletCryptosHtml = ''
     coins.forEach(coin => {
-        mobileCryptosHtml += `
+        mobileWalletCryptosHtml += `
         <div class="md:hidden mobile-table flex flex-col w-full justify-between text-gray-900 px-6">
             <div class="flex w-full justify-between border-b pb-4 mb-4">
                 <a href="">
@@ -57,14 +57,14 @@ export function mobileWalletCoins(coins){
                         <p>$${coin.current_price.toLocaleString()}</p>
                         <p class="${coin.price_change_percentage_24h >= 0 ? 'text-green-500' : 'text-red-600'}">${coin.price_change_percentage_24h.toFixed(2)}%</p>
                     </div>
-                    <a id="${coin.id}" class="buybutton text font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
+                    <a id="${coin.id}" class="sellbutton text font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
                 </div>
             </div>
         </div>
         `
     })
 
-    return mobileCryptosHtml
+    return mobileWalletCryptosHtml
 }
 
 export function mobileCryptos(coins){
