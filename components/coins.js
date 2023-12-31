@@ -8,7 +8,7 @@ export function Cryptos(coins){
                 <td class="px-6 py-4 ${coin.price_change_percentage_24h >= 0 ? 'text-green-500' : 'text-red-600'}">${coin.price_change_percentage_24h.toFixed(2)}%</td>
                 <td class="px-6 py-4">$${coin.market_cap.toLocaleString()}</td>
                 <td class="px-6 py-4 w-auto text-center">
-                    <a id="buybutton" class="font-medium text-white bg-blue-600 py-2 px-4 rounded-md hover:bg-blue-500 transition-all cursor-pointer">Buy</a>
+                    <a id="${coin.id}" class="buybutton font-medium text-white bg-blue-600 py-2 px-4 rounded-md hover:bg-blue-500 transition-all cursor-pointer">Buy</a>
                 </td>
             </tr>
         `
@@ -27,7 +27,7 @@ export function walletCoins(coins){
                 <td class="px-6 py-4 ${coin.price_change_percentage_24h >= 0 ? 'text-green-500' : 'text-red-600'}">${coin.price_change_percentage_24h.toFixed(2)}%</td>
                 <td class="px-6 py-4">$${coin.market_cap.toLocaleString()}</td>
                 <td class="px-6 py-4 w-auto text-center">
-                    <a id="buybutton" class="font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
+                    <a id="${coin.id}" class="buybutton font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
                 </td>
             </tr>
         `
@@ -57,7 +57,7 @@ export function mobileWalletCoins(coins){
                         <p>$${coin.current_price.toLocaleString()}</p>
                         <p class="${coin.price_change_percentage_24h >= 0 ? 'text-green-500' : 'text-red-600'}">${coin.price_change_percentage_24h.toFixed(2)}%</p>
                     </div>
-                    <a id="buybutton" class="text font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
+                    <a id="${coin.id}" class="buybutton text font-medium text-white bg-red-500 py-2 px-4 rounded-md hover:bg-red-600 transition-all cursor-pointer">Sell</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@ export function mobileCryptos(coins){
                         <p>$${coin.current_price.toLocaleString()}</p>
                         <p class="${coin.price_change_percentage_24h >= 0 ? 'text-green-500' : 'text-red-600'}">${coin.price_change_percentage_24h.toFixed(2)}%</p>
                     </div>
-                    <a id="buybutton" class="text font-medium text-white bg-blue-600 py-2 px-4 rounded-md hover:bg-blue-500 transition-all cursor-pointer">Buy</a>
+                    <a id="${coin.id}" class="buybutton text font-medium text-white bg-blue-600 py-2 px-4 rounded-md hover:bg-blue-500 transition-all cursor-pointer">Buy</a>
                 </div>
             </div>
         </div>

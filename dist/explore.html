@@ -230,7 +230,7 @@
         })
     }
 
-    addDynamicEventListener(document.body, 'click', '#buybutton', function (e) {
+    addDynamicEventListener(document.body, 'click', '.buybutton', e => {
         document.querySelector('#alert').classList.remove('hidden')
         document.querySelector('#alert').classList.add('flex')
 
@@ -240,11 +240,13 @@
         })
 
         const mycoins = JSON.parse(localStorage.getItem('mycoins'))
+        let coinId = e.target.getAttribute('id')
+        let purchasedCoin = originalData.filter(coin => coin.id === coinId)
 
         if(mycoins === null){
-            localStorage.setItem('mycoins', JSON.stringify([originalData]))
+            localStorage.setItem('mycoins', JSON.stringify([...purchasedCoin]))
         } else {
-            localStorage.setItem('mycoins', JSON.stringify([...mycoins, originalData]))
+            localStorage.setItem('mycoins', JSON.stringify([...mycoins, ...purchasedCoin]))
         }
     })
 
