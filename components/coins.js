@@ -42,7 +42,7 @@ export function mobileWalletCoins(coins){
         mobileWalletCryptosHtml += `
         <div class="md:hidden mobile-table flex flex-col w-full justify-between text-gray-900 px-6">
             <div class="flex w-full justify-between border-b pb-4 mb-4">
-                <a href="">
+                <a>
                     <div class="flex items-center">
                         <div class="coin-ico border p-2 rounded-xl mr-2">
                             <img src="${coin.image}" alt="${coin.id}" class="w-7 h-7">
@@ -73,7 +73,7 @@ export function mobileCryptos(coins){
         mobileCryptosHtml += `
         <div class="md:hidden mobile-table flex flex-col w-full justify-between text-gray-900 px-6">
             <div class="flex w-full justify-between border-b pb-4 mb-4">
-                <a href="">
+                <a>
                     <div class="flex items-center">
                         <div class="coin-ico border p-2 rounded-xl mr-2">
                             <img src="${coin.image}" alt="${coin.id}" class="w-7 h-7">
